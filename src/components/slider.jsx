@@ -29,50 +29,65 @@ import {
   export const Slider = () => {
     return(
         <section className="mt-16 lg:w-1/2 section hidden lg:block">
-                                    <div>
-                                        <div>
-                                            <Swiper
-                                                slidesPerView={5}
-                                                loop={true}
-                                                autoplay={{
-                                                    delay: 0,
-                                                    disableOnInteraction: false,
-                                                    reverseDirection: false
-    
-                                                }}
-                                                speed={5000}  
-                                                modules={[Autoplay]}                                  
-                                                className="max-w-[90%]"
-                                            >
-                                        {slides.map((slide, index) => (
-                                            <SwiperSlide key={index}>
-                                                {slide.icon}
-                                            </SwiperSlide>
-                                        ))}
-                                            </Swiper>
-                                        </div>
-                                        <div>
-                                            <Swiper
-                                                slidesPerView={5}
-                                                loop={true}
-                                                autoplay={{
-                                                    delay: 0,
-                                                    disableOnInteraction: false,
-                                                    reverseDirection: true
-    
-                                                }}
-                                                speed={5000}  
-                                                modules={[Autoplay]}                                  
-                                                className="max-w-[90%]"
-                                            >
-                                        {slides.map((slide, index) => (
-                                            <SwiperSlide key={index}>
-                                                {slide.icon}
-                                            </SwiperSlide>
-                                        ))}                                               
-                                            </Swiper>
-                                        </div>
-                                    </div>
-                                </section>
+
+            <div>
+                 <div>
+                        <Swiper
+                        observer={true} 
+                        observerparents={true}
+                        obeserveslidechildren={true}
+                        onSwiper={swiper => {
+                            setTimeout(() => {
+                                swiper.update();
+                            },3000)
+                        }}
+                        slidesPerView={5}
+                        loop={true}
+                        autoplay={{
+                            delay: 0,
+                            disableOnInteraction: false,
+                            reverseDirection: false
+                            }}
+                        speed={5000}  
+                        modules={[Autoplay]}                                  
+                        className="max-w-[90%]"
+                        >
+                        {slides.map((slide, index) => (
+                            <SwiperSlide key={index}>
+                                {slide.icon}
+                            </SwiperSlide>
+                            ))}
+                            </Swiper>
+                    </div>
+                    <div>
+                        <Swiper
+                        observer={true} 
+                        observerparents={true}
+                        obeserveslidechildren={true}
+                        onSwiper={swiper => {
+                        setTimeout(() => {
+                            swiper.update();
+                            },3000)
+                            }}
+                        slidesPerView={5}
+                        loop={true}
+                        autoplay={{
+                            delay: 0,
+                            disableOnInteraction: false,
+                            reverseDirection: true                       
+                            }}
+                    speed={5000}  
+                        modules={[Autoplay]}                                  
+                        className="max-w-[90%]"
+                        >
+                        {slides.map((slide, index) => (
+                            <SwiperSlide key={index}>
+                                {slide.icon}
+                            </SwiperSlide>
+                        ))}                                               
+                        </Swiper>
+                    </div>
+            </div>
+        </section>
     )
   }

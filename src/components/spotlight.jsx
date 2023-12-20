@@ -1,9 +1,11 @@
 
 
-
+import { About } from "./about";
 import React, { useState } from "react";
 import { Slider} from "./slider";
 import { Socials } from "./socials";
+import { Experience } from "./experience";
+import { Projects } from "./projects";
 
 function HandleMouseMove(e, setMousePosition) {
     const { clientX, clientY, currentTarget } = e;
@@ -21,7 +23,7 @@ export const Spotlight = () => {
     };
     
     return ( 
-    <body className="bg-[#0a192f] leading-relaxed text-slate-900 antialiased selection:bg-teal-300 selection:text-teal-900">
+    <body className="bg-[#0a192f] leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900">
     
         <div className="relative h-screen w-screen ">
             <div
@@ -75,16 +77,6 @@ export const Spotlight = () => {
                                                 group-hover:text-slate-200 group-focus-visible:text-slate-200">Projects</span>
                                             </a>
                                         </li>
-                                        <li>
-                                        <a className="flex group items-center py-3 active" href="#about">
-                                                <span className="nav-indicator mr-5 h-px w-8 bg-slate-600 transition-all group-hover:w-16 
-                                                group-hover:bg-slate-200 group-focus-visible:w-16 
-                                                group-focus-visible:bg-slate-200 motion-reduce:transition-none">
-                                                </span>
-                                                <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 
-                                                group-hover:text-slate-200 group-focus-visible:text-slate-200">Resume</span>
-                                            </a>
-                                        </li>
                                     </ul>
                                 </nav>
                             </div>
@@ -95,6 +87,17 @@ export const Spotlight = () => {
                                 <Socials/>
                             </div>
                         </header>
+                        <main className="scrollbar-hide max-h-[calc(120vh-100px)] pt-24 lg:w-1/2 lg:py-24 overflow-y-auto">
+                            <section id="about" class="about" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+                                <About/>
+                            </section>
+                            <section className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" id="experience" aria-label="Work Experience" class="experience">
+                                <Experience/>
+                            </section>
+                            <section id="projects" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 pt-10">
+                                <Projects   />
+                            </section>
+                        </main>
                     </div>
                 </div>
 

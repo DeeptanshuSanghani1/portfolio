@@ -10,6 +10,13 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  variants: {
+    extend: {
+      borderRadius: ['hover', 'group-hover'], 
+    },
+  },
+  plugins: [
+    require('tailwind-scrollbar-hide'),
+  ],
 }
 
