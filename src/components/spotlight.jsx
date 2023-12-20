@@ -1,4 +1,34 @@
+"use client"
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import 'swiper/css';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css/autoplay';   
+import {
+    IconBrandPython,
+    IconBrandCSharp,
+    IconBrandCpp,
+    IconSql,
+    IconBrandReact,
+    IconBrandGit,
+    IconBrandMongodb,
+    IconBrandNodejs,
+
+  } from "@tabler/icons-react";
+
+
 import React, { useState } from "react";
+const slides = [
+    { id: 1, icon: <IconBrandPython size={40} strokeWidth={1.5} color="white" /> },
+    { id: 2, icon: <IconBrandCSharp size={40} strokeWidth={1.5} color="white" /> },
+    { id: 3, icon: <IconBrandCpp size={40} strokeWidth={1.5} color="white" /> },
+    { id: 4, icon: <IconSql size={40} strokeWidth={1.5} color="white" /> },
+    { id: 5, icon: <IconBrandReact size={40} strokeWidth={1.5} color="white" /> },
+    { id: 6, icon: <IconBrandGit size={40} strokeWidth={1.5} color="white" /> },
+    { id: 7, icon: <IconBrandMongodb size={40} strokeWidth={1.5} color="white" /> },
+    { id: 8, icon: <IconBrandNodejs size={40} strokeWidth={1.5} color="white" /> },
+    // Add more slides with Tabler Icons as needed
+  ];
 function HandleMouseMove(e, setMousePosition) {
     const { clientX, clientY, currentTarget } = e;
     const { left, top } = currentTarget.getBoundingClientRect();
@@ -69,8 +99,66 @@ export const Spotlight = () => {
                                                 group-hover:text-slate-200 group-focus-visible:text-slate-200">Projects</span>
                                             </a>
                                         </li>
+                                        <li>
+                                        <a className="flex group items-center py-3 active" href="#about">
+                                                <span className="nav-indicator mr-5 h-px w-8 bg-slate-600 transition-all group-hover:w-16 
+                                                group-hover:bg-slate-200 group-focus-visible:w-16 
+                                                group-focus-visible:bg-slate-200 motion-reduce:transition-none">
+                                                </span>
+                                                <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 
+                                                group-hover:text-slate-200 group-focus-visible:text-slate-200">Resume</span>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </nav>
+                            </div>
+                            <div >
+                                <section className="mt-16 lg:w-1/2 section hidden lg:block">
+                                    <div>
+                                        <div>
+                                            <Swiper
+                                                slidesPerView={5}
+                                                loop={true}
+                                                autoplay={{
+                                                    delay: 0,
+                                                    disableOnInteraction: false,
+                                                    reverseDirection: false
+    
+                                                }}
+                                                speed={5000}  
+                                                modules={[Autoplay]}                                  
+                                                className="max-w-[90%]"
+                                            >
+                                        {slides.map((slide, index) => (
+                                            <SwiperSlide key={index}>
+                                                {slide.icon}
+                                            </SwiperSlide>
+                                        ))}
+                                            </Swiper>
+                                        </div>
+                                        <div>
+                                            <Swiper
+                                                slidesPerView={5}
+                                                loop={true}
+                                                autoplay={{
+                                                    delay: 0,
+                                                    disableOnInteraction: false,
+                                                    reverseDirection: true
+    
+                                                }}
+                                                speed={5000}  
+                                                modules={[Autoplay]}                                  
+                                                className="max-w-[90%]"
+                                            >
+                                        {slides.map((slide, index) => (
+                                            <SwiperSlide key={index}>
+                                                {slide.icon}
+                                            </SwiperSlide>
+                                        ))}                                               
+                                            </Swiper>
+                                        </div>
+                                    </div>
+                                </section>
                             </div>
                         </header>
                     </div>
