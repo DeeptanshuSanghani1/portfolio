@@ -1,5 +1,5 @@
 
-
+import './spotlight.css';
 import { About } from "./about";
 import React, { useState } from "react";
 import { Slider} from "./slider";
@@ -23,6 +23,7 @@ export const Spotlight = () => {
     };
     
     return ( 
+        
     <body className="bg-[#0a192f] leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900">
     
         <div className="relative h-screen w-screen ">
@@ -33,9 +34,9 @@ export const Spotlight = () => {
                 background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(29,78,216,0.15), transparent 80%)`,
                 }}
             >
-                <div className ="mx-auto min-h-screen max-w-screen-xl px-5 py-12 lg:px-14 lg:py-0">
+                <div className ="mx-auto  px-5 py-12 lg:px-14 lg:py-0">
                     <div className="lg:flex lg:justify-between lg:gap-4">
-                        <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+                        <header className="sticky top-0  lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
                             <div>
                                 <h1 className='lg:text-5xl font-bold -tracking-wide text-[#ccd6f6] phone:text-3xl 
                                 items-center flex text-opacity-100 '>
@@ -48,7 +49,7 @@ export const Spotlight = () => {
                                 <nav className="nav hidden lg:block" aria-label="In-page jump links">
                                     <ul className="mt-16 w-max">
                                         <li>
-                                            <a className="flex group items-center py-3 active" href="#about">
+                                            <a className="flex group items-center py-3 active !scroll-smooth" href="#about">
                                                 <span className="nav-indicator mr-5 h-px w-8 bg-slate-600 transition-all group-hover:w-16 
                                                 group-hover:bg-slate-200 group-focus-visible:w-16 
                                                 group-focus-visible:bg-slate-200 motion-reduce:transition-none">
@@ -58,7 +59,7 @@ export const Spotlight = () => {
                                             </a>
                                         </li>
                                         <li>
-                                        <a className="flex group items-center py-3 active" href="#about">
+                                        <a className="flex group items-center py-3 active" href="#experience">
                                                 <span className="nav-indicator mr-5 h-px w-8 bg-slate-600 transition-all group-hover:w-16 
                                                 group-hover:bg-slate-200 group-focus-visible:w-16 
                                                 group-focus-visible:bg-slate-200 motion-reduce:transition-none">
@@ -68,7 +69,7 @@ export const Spotlight = () => {
                                             </a>
                                         </li>
                                         <li>
-                                        <a className="flex group items-center py-3 active" href="#about">
+                                        <a className="flex group items-center py-3 active" href="#projects">
                                                 <span className="nav-indicator mr-5 h-px w-8 bg-slate-600 transition-all group-hover:w-16 
                                                 group-hover:bg-slate-200 group-focus-visible:w-16 
                                                 group-focus-visible:bg-slate-200 motion-reduce:transition-none">
@@ -87,26 +88,30 @@ export const Spotlight = () => {
                                 <Socials/>
                             </div>
                         </header>
-                        <main className="scrollbar-hide max-h-[calc(120vh-100px)] pt-24 lg:w-1/2 lg:py-24 overflow-y-auto">
-                            <section id="about" class="about" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+                        <main className="overflow-x-hidden scrollbar-hide sc max-h-[calc(90vh-100px)] pt-24 lg:w-1/2 lg:py-24 overflow-y-auto">
+                            <div>
+                            <section id="about" class="about" className="mb-8  scroll-mt-16 md:mb-12 lg:mb-28 lg:scroll-mt-24">
                                 <About/>
                             </section>
-                            <section className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" id="experience" aria-label="Work Experience" class="experience">
+                            </div>
+                            <div className="pb-7">
+                            <section className="mb-16 scroll-mt-16 md:mb-24 lg:mb-9 lg:scroll-mt-24 " id="experience" aria-label="Work Experience" class="experience">
                                 <Experience/>
                             </section>
-                            <section id="projects" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 pt-10">
-                                <Projects   />
+                            </div>
+                            <br/>
+                            <br/>
+                            <section id="projects" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"  >
+                                <Projects/>
                             </section>
                         </main>
                     </div>
                 </div>
 
-            </div>
-            
-    
-                
-                    
+            </div>   
         </div>
     </body>
+    
   )
+
 }

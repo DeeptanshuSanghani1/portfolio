@@ -3,14 +3,14 @@ import React from 'react'
 export const About = () => {
   return (
     <div>
-        <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 
-        backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto 
-        lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+        <div class=" z-20 -mx-6 mb-4 w-screen bg-slate-900/50 px-6 py-5 
+ backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto 
+ lg:w-fulllg:px-0 lg:py-0 lg:opacity-0">
         <h2 class="text-sm font-bold uppercase 
         tracking-widest text-slate-200 lg:sr-only">About</h2>
         </div>
         <div className="text-center">
-            <p className="mb-4 lg:text-3xl font-bold -tracking-wide text-[#ccd6f6]  phone:text-sm
+            <p className="mb-4 lg:text-3xl font-bold -tracking-wide text-[#ccd6f6]  phone:text-xl
                                 items-center flex text-opacity-100 italic pl-20" >
             Welcome to my vibrant corner <br/> of the digital universe!
             </p>

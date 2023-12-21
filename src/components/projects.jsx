@@ -1,29 +1,31 @@
 import React from 'react'
+import './spotlight.css';
 
 export const Projects = () => {
   return (
-    <div className="">
-        <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 
-        lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+    <div>
+        <div className="stickytop-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/50 px-6 py-5 
+ backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto 
+ lg:w-fulllg:px-0 lg:py-0 lg:opacity-0">
             <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
                 Projects
             </h2>
         </div>
         <div>
             <ol className="group/list ">
-                <li className="mb-12">
-                    <div className="group relative grid pb-1 transition-all 
-                    sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 
-                    lg:group-hover/list:opacity-50">
-                    <div className="underline-effect absolute -inset-x-4 -inset-y-4 z-0 hidden  
+                <li className="mb-12 group">
+                <div className="group relative grid pb-1 transition-all
+                    phone:grid-cols-8 phone:gap-8 md:gap-4 lg:hover:!opacity-100 
+                    lg:group-hover/list:opacity-50 	shadow-lg hover:shadow-[#6419e6] group-hover:rounded-hover:shadow-2xl">
+                        <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none 
                         lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 
                         lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] 
-                        lg:group-hover:drop-shadow-lg group-hover:rounded-tr-full">
-                    </div>
-                        <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
-                        Dec 2023
+                        lg:group-hover:drop-shadow-lg">
+                        </div>
+                        <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 phone:col-span-2">
+                         <div className="ml-2">Dec 2023</div>
                         </header>
-                        <div className="z-10 sm:col-span-6">
+                        <div className="z-10 phone:col-span-6">
                             <h3 className='font-medium leading-snug text-slate-200'>
                                 <div>
                                     <a className="inline-flex items-baseline font-medium
@@ -43,16 +45,29 @@ export const Projects = () => {
                                             </span>
                                     </a>
                                 </div>
-                                <div className="pt-3"></div>
+                                <div><div class="text-slate-500" aria-hidden="true"></div></div>
                             </h3>
                             <p className="mt-2 text-sm leading-normal">
-                                A portfolio website built using React and Tailwind CSS. Showcases projects and experience. This website is hosted on...
+                                Delivered high quality robust code that optimized the license plate recognition system. Presented an
+                                multiple algorithms and solutions to the client.
                             </p>
                             <ul class="mt-2 flex flex-wrap">
-                                <li className="mr-1.5 mt-2">
+                                <li className="mr-1.5 mt-2 ">
                                     <div className="flex items-center rounded-full bg-teal-400/10 
                                     px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                        Python
+                                        React
+                                    </div>
+                                </li>
+                                <li className="mr-1.5 mt-2 ">
+                                    <div className="flex items-center rounded-full bg-teal-400/10 
+                                    px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                                        Tailwind
+                                    </div>
+                                </li>
+                                <li className="mr-1.5 mt-2 ">
+                                    <div className="flex items-center rounded-full bg-teal-400/10 
+                                    px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                                        Swiper JS
                                     </div>
                                 </li>
                             </ul>

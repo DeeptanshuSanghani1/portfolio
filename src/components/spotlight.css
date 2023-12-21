@@ -1,0 +1,14 @@
+main {
+    scroll-behavior: smooth;
+  }
+  /* Add this to your styles or CSS file */
+.border-underline {
+    position: absolute;
+    border-bottom: 4px solid transparent; /* Set the initial border color and size */
+    transition: border-color 0.3s ease; /* Add transition for a smooth effect */
+  }
+  
+  .group:hover .border-underline {
+    border-color: #6419e6; /* Set the desired color for the border when hovered */
+  }
+  
