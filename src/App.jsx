@@ -6,9 +6,7 @@ import { Spotlight } from "./components/spotlight";
 function App() {
   return (
     <div>
-     <Spotlight>
-        <Home />
-      </Spotlight>
+     <Spotlight/>
     </div>
   );
 }

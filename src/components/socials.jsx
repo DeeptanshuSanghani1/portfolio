@@ -4,6 +4,7 @@ import {
     IconsSquare
   } from "@tabler/icons-react";
   import { IconSquareRoundedLetterr } from '@tabler/icons-react';
+  import pdf from '../Resume/DeeptanshuSanghani-Resume.pdf'
 export const Socials = () => {
     return(
         <div>
@@ -19,7 +20,7 @@ export const Socials = () => {
                 </a>
                 </li>
                 <li className="mr-5 text-xs">
-                <a class="block hover:text-slate-200 lg:py-7 "  href="https://www.linkedin.com/in/deeptanshusanghani/" target="_blank">
+                <a class="block hover:text-slate-200 lg:py-7 " href="" onClick={()=> window.open(pdf)} target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-rounded-letter-r" className="lg:w-8 lg:h-8 
                                                                                                     phone:w-6 phone:h-6 text-white" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" 
                  stroke-linecap="round" stroke-linejoin="round">

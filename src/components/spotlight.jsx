@@ -34,16 +34,16 @@ export const Spotlight = () => {
                 background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(29,78,216,0.15), transparent 80%)`,
                 }}
             >
-                <div className ="mx-auto  px-5 py-12 lg:px-14 lg:py-0">
+                <div className ="mx-auto  px-5 py-12 lg:px-36 lg:py-0">
                     <div className="lg:flex lg:justify-between lg:gap-4">
-                        <header className="sticky top-0  lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+                        <header className="sticky top-0  lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24 lg:pl-10">
                             <div>
                                 <h1 className='lg:text-5xl font-bold -tracking-wide text-[#ccd6f6] phone:text-3xl 
                                 items-center flex text-opacity-100 '>
                                     Deeptanshu Sanghani
                                 </h1>
                                 <h2 className='lg:text-4xl py-6 font-bold tracking-tight text-[#ccd6f6] phone:text-xl 
-                                items-center flex text-opacity-100 '>Full Stack Engineer</h2>
+                                items-center flex text-opacity-100 lg:pt-12 '>Full Stack Engineer</h2>
                             </div>
                             <div>
                                 <nav className="nav hidden lg:block" aria-label="In-page jump links">

@@ -11,7 +11,7 @@ export const About = () => {
         </div>
         <div className="text-center">
             <p className="mb-4 lg:text-3xl font-bold -tracking-wide text-[#ccd6f6]  phone:text-xl
-                                items-center flex text-opacity-100 italic pl-20" >
+                                items-center flex text-opacity-100 italic pl-20 lg:pl-44" >
             Welcome to my vibrant corner <br/> of the digital universe!
             </p>
         </div>
@@ -20,8 +20,8 @@ export const About = () => {
 my journey is a dynamic dance between problem-solving and continuous learning</p> 
         </div>
         <div className="py-5">
-            <p className="italic">Beyond the glow of the screen, you might catch me in the midst of a soccer match or spiking a volleyball with friends. 
-When I'm not navigating the digital realm, you might catch me kicking it on the soccer field, scoring goals in the physical world or just unwinding with family.</p> 
+            <p className="italic">Beyond the screen, I usually spend time with family or friends playing various sports such as soccer or volleyball or just enjoying
+            each others company. You might also catch me streaming some games or just doing/learning some coding on <a className='hover:text-slate-200 font-black' target='_blank' href='https://www.twitch.tv/marvcs' >twitch</a> </p> 
         </div>
 
     </div>
