@@ -11,7 +11,7 @@ export const About = () => {
         </div>
         <div className="text-center">
             <p className="mb-4 lg:text-3xl font-bold -tracking-wide text-[#ccd6f6]  phone:text-xl
-                                items-center flex text-opacity-100 italic pl-20 lg:pl-44" >
+                                items-center flex text-opacity-100 italic pl-20 lg:pl-44  " >
             Welcome to my vibrant corner <br/> of the digital universe!
             </p>
         </div>

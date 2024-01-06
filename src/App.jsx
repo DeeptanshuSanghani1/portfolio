@@ -1,5 +1,4 @@
 
-import { Home } from "./components/home";
 import { Spotlight } from "./components/spotlight";
 
 

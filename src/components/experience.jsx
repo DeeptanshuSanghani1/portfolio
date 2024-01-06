@@ -3,7 +3,7 @@ import React from 'react'
 export const Experience = () => {
   return (
     <div>
-        <div className="top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/50 px-6 py-5 
+        <div className="top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/50 px-6 py-3 
  backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto 
  lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
             <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
@@ -11,7 +11,7 @@ export const Experience = () => {
             </h2>
         </div>
         <div>
-            <ol className="group/list">
+            <ol className="group/list pb-4">
                 <li className="mb-12">
                     <div className="group relative grid pb-1 transition-all 
                     sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 

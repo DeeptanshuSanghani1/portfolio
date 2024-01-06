@@ -1,9 +1,7 @@
 import {
     IconBrandGithub,
     IconBrandLinkedin,
-    IconsSquare
   } from "@tabler/icons-react";
-  import { IconSquareRoundedLetterr } from '@tabler/icons-react';
   import pdf from '../Resume/DeeptanshuSanghani-Resume.pdf'
 export const Socials = () => {
     return(

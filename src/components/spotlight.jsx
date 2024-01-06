@@ -25,7 +25,6 @@ export const Spotlight = () => {
     return ( 
         
     <body className="bg-[#0a192f] leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900">
-    
         <div className="relative h-screen w-screen ">
             <div
                 onMouseMove={handleMouseMove}
@@ -49,7 +48,7 @@ export const Spotlight = () => {
                                 <nav className="nav hidden lg:block" aria-label="In-page jump links">
                                     <ul className="mt-16 w-max">
                                         <li>
-                                            <a className="flex group items-center py-3 active !scroll-smooth" href="#about">
+                                            <a href="#about" className=" !scroll-smooth flex group items-center py-3 active">
                                                 <span className="nav-indicator mr-5 h-px w-8 bg-slate-600 transition-all group-hover:w-16 
                                                 group-hover:bg-slate-200 group-focus-visible:w-16 
                                                 group-focus-visible:bg-slate-200 motion-reduce:transition-none">
@@ -88,20 +87,20 @@ export const Spotlight = () => {
                                 <Socials/>
                             </div>
                         </header>
-                        <main className="overflow-x-hidden scrollbar-hide sc max-h-[calc(90vh-100px)] pt-24 lg:w-1/2 lg:py-24 overflow-y-auto">
-                            <div>
-                            <section id="about" class="about" className="mb-8  scroll-mt-16 md:mb-12 lg:mb-28 lg:scroll-mt-24">
+                        <main className="overflow-x-hidden scrollbar-hide sc max-h-[calc(90vh-100px)] pt-24 lg:w-1/2 lg:py-14 overflow-y-auto">
+                            <div className='lg:pt-4'>
+                            <section id="about" class="about" className="mb-8 md:mb-12 lg:mb-28">
                                 <About/>
                             </section>
                             </div>
-                            <div className="pb-7">
-                            <section className="mb-16 scroll-mt-16 md:mb-24 lg:mb-9 lg:scroll-mt-24 " id="experience" aria-label="Work Experience" class="experience">
+                            <div className="lg:pb-2">
+                            <section className="mb-16 md:mb-24 lg:mb-9 " id="experience" aria-label="Work Experience">
                                 <Experience/>
                             </section>
                             </div>
                             <br/>
                             <br/>
-                            <section id="projects" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"  >
+                            <section id="projects" className="mb-16 md:mb-24 lg:mb-36">
                                 <Projects/>
                             </section>
                         </main>
