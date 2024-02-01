@@ -96,7 +96,7 @@ export const Experience = () => {
                                 <div><div class="text-slate-500" aria-hidden="true">Data Scientist</div></div>
                             </h3>
                             <p className="mt-2 text-sm leading-normal">
-                                TA for a python course at the University of Toronto. Helped students with their any questions they had during the class or regarding the course material
+                                TA for a python course at Sheridan College. Helped students with their any questions they had during the class or regarding the course material
                                 Held online study sessions every week and went over the course material that was covered and more!
                             </p>
                             <ul class="mt-2 flex flex-wrap">
