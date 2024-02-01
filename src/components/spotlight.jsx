@@ -7,6 +7,7 @@ import { Socials } from "./socials";
 import { Experience } from "./experience";
 import { Projects } from "./projects";
 
+
 function HandleMouseMove(e, setMousePosition) {
     const { clientX, clientY, currentTarget } = e;
     const { left, top } = currentTarget.getBoundingClientRect();
@@ -87,7 +88,7 @@ export const Spotlight = () => {
                                 <Socials/>
                             </div>
                         </header>
-                        <main className="overflow-x-hidden scrollbar-hide sc max-h-[calc(90vh-100px)] pt-24 lg:w-1/2 lg:py-14 overflow-y-auto">
+                        <main className="overflow-x-hidden scrollbar scrollbar-thumb-blue-300 scrollbar-track-0a192f  sc max-h-[calc(90vh-100px)] pt-24 lg:w-1/2 lg:py-14 overflow-y-auto">
                             <div className='lg:pt-4'>
                             <section id="about" class="about" className="mb-8 md:mb-12 lg:mb-28">
                                 <About/>
